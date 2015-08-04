@@ -42,6 +42,7 @@ module app {
     'use strict';
     angular.module('starter', ['ionic','ngCordova'])
         .value('config', config)
+        .constant('_', _)
         .service("Chats", app.services.ChatFactory)
         .service("appService", app.services.AppService)
         .controller("AppCtrl", app.controllers.AppCtrl)
