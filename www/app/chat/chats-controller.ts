@@ -1,20 +1,20 @@
 /// <reference path="../_app.ts" />
 
 module app.controllers {
-    
-    export interface IChatCtrlScope extends ng.IScope {
-        chats: any;
-        remove(chat: any): void;
-    }
 
-    export class ChatCtrl {
-        constructor(private $scope: IChatCtrlScope,
-                    private $stateParams,
-                    private Chats: app.services.IChatFactory){
-            $scope.chats = Chats.all();
-            $scope.remove = function(chat) {
-                Chats.remove(chat);
-            }
-        }
-    }
+	export class ChatCtrl {
+
+		public chats: app.models.IChat[];
+
+		constructor(
+			private $stateParams: angular.ui.IStateParamsService,
+			private Chats: app.services.ChatFactory) {
+				this.chats = this.Chats.all();
+		}
+
+		public remove(chat: app.models.IChat): void {
+			this.Chats.remove(chat);
+			this.chats = this.Chats.all();
+		}
+	}
 }

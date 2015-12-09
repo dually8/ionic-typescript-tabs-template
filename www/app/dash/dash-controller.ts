@@ -2,9 +2,9 @@
 
 module app.controllers {
 
-    export class DashCtrl {
-        constructor(){
-
-        }
-    }
+	export class DashCtrl {
+		constructor(){
+			// do stuff
+		}
+	}
 }
