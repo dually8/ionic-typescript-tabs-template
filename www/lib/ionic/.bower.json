@@ -1,6 +1,6 @@
 {
   "name": "ionic",
-  "codename": "yttrium-yeti",
+  "codename": "Copenhagen",
   "homepage": "https://github.com/driftyco/ionic",
   "authors": [
     "Max Lynch <max@drifty.com>",
@@ -11,7 +11,8 @@
   "main": [
     "css/ionic.css",
     "fonts/*",
-    "js/ionic.bundle.js"
+    "js/ionic.js",
+    "js/ionic-angular.js"
   ],
   "keywords": [
     "mobile",
@@ -32,11 +33,11 @@
     "angular-sanitize": "1.4.3",
     "angular-ui-router": "0.2.13"
   },
-  "_release": "722ca595ec",
+  "_release": "5a68294947",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "722ca595ece2f4cb071693737ebfc905442ec715"
+    "commit": "5a6829494726c99f01dab39935c2eed623ea5ae9"
   },
   "_source": "git://github.com/driftyco/ionic-bower.git",
   "_target": "master",
