@@ -1,4 +1,4 @@
-/// <reference path="./_app.ts" />
+/// <reference path="./_app.ts" />
 
 module app {
 
