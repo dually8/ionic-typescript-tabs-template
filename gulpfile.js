@@ -13,6 +13,7 @@ var paths = {
 };
 
 gulp.task('default', ['sass','tsc']);
+gulp.task('serve:before', ['sass', 'tsc', 'watch']); // for ionic2 beta
 
 gulp.task('sass', function(done) {
   gulp.src('./scss/ionic.app.scss')
